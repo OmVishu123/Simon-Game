@@ -1,0 +1,122 @@
+* {
+    font-family:sans-serif;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+    color: aliceblue;
+}
+
+.outer {
+
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    margin: auto;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 2px 2px 24px white;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+    animation-name: box_rotation;
+    animation-duration: 2s;
+
+}
+
+@keyframes box_rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+.upper {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner {
+    height: 240px;
+    width: 240px;
+    border: 1px solid white;
+}
+
+
+.inner1 {
+    border-top-left-radius: 100%;
+    background-color: green;
+    opacity: 0.3;
+}
+
+.inner2 {
+    border-top-right-radius: 100%;
+    background-color: red;
+    opacity: 0.5;
+}
+
+.inner3 {
+    border-bottom-left-radius: 100%;
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+.inner4 {
+    border-bottom-right-radius: 100%;
+    background-color: blue;
+    opacity: 0.5;
+}
+@media only screen and (max-width:545px) {
+    .outer{
+        height: 300px;
+        width: 300px;
+    }
+    .inner {
+    
+        height: 140px;
+        width: 140px;
+    
+    }
+    
+}
+
+.flash {
+    opacity: 1;
+   
+}
+
+.red_flash {
+    background-color: red;
+}
+
+h2 {
+    background-color: inherit;
+}
+h3 {
+    background-color: inherit;
+}
+b {
+    background-color: inherit;
+}
+.initialize{
+    margin: 4px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    opacity: 0.7;
+    box-shadow: 2px 2px 24px white;
+}
+.initialize:hover{
+    border: 2px solid white;
+    opacity: 1;
+}
